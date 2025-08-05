@@ -5,7 +5,7 @@ function Header() {
   return (
     <Box
       sx={{
-        width: '550%',
+        width: '100%',
         height: '300px',
         backgroundColor: '#0A192F',
         display: 'flex',
