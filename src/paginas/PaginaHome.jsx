@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import Header from '../Componentes/Header/Header';
 import { Box, Typography, Button, Container, Grid, Card, CardContent } from '@mui/material';
 
 function PaginaHome() {
+  const navigate = useNavigate()
   return (
     <>
       <Header />
@@ -58,6 +60,7 @@ function PaginaHome() {
               color: '#0A192F',
               '&:hover': { backgroundColor: '#00aacc' }
             }}
+            onClick={() => {navigate('/botao')}}
           >
             Agende uma aula experimental
           </Button>

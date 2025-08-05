@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import PaginaHome from "./paginas/PaginaHome"
+import PaginaBotao from "./paginas/PaginaBotao"
 
 function App() {
 
@@ -7,6 +8,7 @@ function App() {
      <BrowserRouter>
     <Routes>
       <Route path="/" element={<PaginaHome /> }/>
+      <Route path="/botao" element={<PaginaBotao /> }/>
     </Routes>
      </BrowserRouter>
   )
